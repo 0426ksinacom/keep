@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--亮色主题-->
+    <style name="AppThemeLight" parent="BaseThemeLight" />
+    <!-- http://blog.sina.com.cn/s/blog_6e334dc70102ve7d.html-->
+    <style name="BaseThemeLight" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:listDivider">@drawable/divider</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/half_black</item>
+
+        <!--设置波纹颜色-->
+        <!--<item name="colorControlHighlight">@color/white</item>-->
+        <!-- 设置水纹颜色-->
+        <!--<item name="selectableItemBackground">@drawable/selectable_item_background</item>-->
+        <!--<item name="android:selectableItemBackground">@drawable/selectable_item_background</item>-->
+
+
+    </style>
+
+    <style name="translucent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!--<item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>-->
+    </style>
+
+
+    <!--自定义DialogActivity-->
+    <style name="DialogActivity" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 背景加模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+
+</resources>
